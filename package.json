@@ -48,6 +48,7 @@
     "gulp-file-include": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-include": "^2.4.1",
-    "gulp-sourcemaps": "^3.0.0"
+    "gulp-sourcemaps": "^3.0.0",
+    "mapbox-gl": "^2.9.2"
   }
 }

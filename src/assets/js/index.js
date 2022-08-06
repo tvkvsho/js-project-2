@@ -57,14 +57,14 @@ var swiper1 = new Swiper(".mySwiper1", {
     },
 });
 
-// CODE MAPS
+// Map Box
 mapboxgl.accessToken = 'pk.eyJ1IjoibGVtb256aWxsYWgiLCJhIjoiY2w2Z3Y5aXZjMGczNjNlbzY5bTd0c2RoeiJ9.-W-rYIC6L_dBuRNJAMFBjw';
 
 const map = new mapboxgl.Map({
     container: 'map', // container ID
-    style: 'mapbox://styles/mapbox/streets-v11', // style URL
-    center: [-74.5, 40], // starting position [lng, lat]
-    zoom: 9, // starting zoom
+    style: 'mapbox://styles/lemonzillah/cl6gvddyc000015t7xhcf3rlk', // style URL
+    center: [-122.11, 37.42], // starting position [lng, lat]
+    zoom: 13, // starting zoom
     projection: 'globe' // display the map as a 3D globe
 });
 

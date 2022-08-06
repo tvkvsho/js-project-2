@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -291,10 +292,40 @@
             </div>
         </section>
         <section class="contact">
-            <form action="" class="form contact__form"></form>
             <div class="map contact__map">
                 <div id='map' style="width: 100vw; height: 70vh";></div>
             </div>
+            <form action="" class="form contact__form">
+                <div class="contact__heading heading">
+                    <div class="contact__line line"></div>
+                    <h2 class="contact__title h2__title">
+                        GET IN TOUCH
+                    </h2>
+                </div>
+                <div class="contact__contacts">
+                    <p class="contact__p">
+                        <i class="fa-solid fa-location-dot"></i>
+                        91 Nolan Extensions Suite 603
+                    </p>
+                    <p class="contact__p">
+                        <i class="fa-solid fa-phone"></i>
+                        +001 356-868-2454
+                    </p>
+                    <p class="contact__p">
+                        <i class="fa-solid fa-inbox"></i>
+                        montichello@service.com
+                    </p>
+                    <p class="contact__p">
+                        <i class="fa-solid fa-clock-nine"></i>
+                        From 07:05AM to 19:30PM
+                    </p>
+                </div>
+                <fieldset class="fieldset contact__fieldset">
+                    <input type="text" class="contact__inp" placeholder="Name">
+                    <input type="email" class="contact__inp" placeholder="Email">
+                    <button class="button contact__button">Submit</button>
+                </fieldset>
+            </form>
         </section>
     </div>
 

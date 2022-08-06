@@ -1,5 +1,6 @@
 body {
     font-family: $main-font;
+    overflow-x: hidden;
 }
 // Main styles
 .container{
@@ -69,4 +70,5 @@ body {
 .line{
     width: 100px;
     height: 1px;
+    margin-bottom: 30px;
 }
