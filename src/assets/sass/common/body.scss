@@ -203,22 +203,6 @@
 .contact{
   position: relative;
 
-  &__form{
-    max-width: 770px;
-    margin: 0 auto;
-    padding: 60px;
-    background: white;
-    position: absolute;
-    left: 50%;
-    top: 85%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-
   &__heading{
     grid-area: 1 / 1 / 2 / 3;
   }
@@ -234,10 +218,6 @@
   &__contacts{
     display: flex;
     flex-direction: column;
-  }
-
-  &__fieldset{
-    border: none;
   }
 
   &__inp{
