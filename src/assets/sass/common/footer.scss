@@ -8,5 +8,19 @@
   &__container{
     max-width: 770px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__logo{
+    margin: 0 0 40px 0;
+  }
+
+  &__social{
+      margin-left: auto;
+  }
+
+  &__copy{
+    color: white;
   }
 }
