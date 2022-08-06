@@ -1,0 +1,72 @@
+body {
+    font-family: $main-font;
+}
+// Main styles
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blue{
+    background: $color-blue;
+    left: 0;
+}
+
+.purple{
+    background: $color-purple;
+    right: 0;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.u-title{
+    font-family: $main-font;
+    font-size: 22px;
+    color: $color-dark-blue;
+}
+
+.h2{
+    &__title{
+        font-size: 44px;
+        color: $color-dark-blue;
+        font-family: $main-font;
+        font-weight: bold;
+    }
+}
+
+.text{
+    font-family: $sub-font;
+    font-size: 18px;
+    color: $color-dark-blue;
+}
+
+.button{
+    font-family: $main-font;
+    color: $color-dark-blue;
+    font-size: 14px;
+    padding: 16px 41px;
+    background: none;
+    border: 1px solid $color-black;
+    border-radius: 0;
+    border-style: solid;
+}
+
+.line{
+    width: 100px;
+    height: 1px;
+}

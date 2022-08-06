@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!--Шлях до css це відносний шлях не залежить ввід папки-->
+    <link rel="stylesheet" href="@@webRoot/css/bundle.min.css">
+    <!-- Slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <nav class="nav header__nav">
+                    <img src="@@webRoot/img/logo.svg" alt="" class="nav__logo">
+                    <ul class="menu header__menu">
+                        <li class="menu__item">
+                            ABOUT US
+                        </li>
+                        <li class="menu__item">
+                            PROJECTS
+                        </li>
+                        <li class="menu__item">
+                            NEWS
+                        </li>
+                        <li class="menu__item">
+                            CONTACT
+                        </li>
+                    </ul>
+                    <div class="social header__social">
+                        <div class="social__item">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="social__item">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="social__item">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide__titles">
+                            <h2 class="header__title">SIMPLE & MODERN</h2>
+                            <h4 class="header__sub-title">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h4>
+                        </div>
+                        <img src="@@webRoot/img/slider/slider01.jpg" alt="" class="header__bg">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide__titles">
+                            <h2 class="header__title">SIMPLE & MODERN</h2>
+                            <h4 class="header__sub-title">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h4>
+                        </div>
+                        <img src="@@webRoot/img/slider/slider01.jpg" alt="" class="header__bg">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide__titles">
+                            <h2 class="header__title">SIMPLE & MODERN</h2>
+                            <h4 class="header__sub-title">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h4>
+                        </div>
+                        <img src="@@webRoot/img/slider/slider01.jpg" alt="" class="header__bg">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide__titles">
+                            <h2 class="header__title">SIMPLE & MODERN</h2>
+                            <h4 class="header__sub-title">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h4>
+                        </div>
+                        <img src="@@webRoot/img/slider/slider01.jpg" alt="" class="header__bg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </header>
+        <!-- WHAT WE DO SECTION -->
+        <section class="projects">
+            <div class="container projects__container">
+                <!-- HEADING -->
+                <div class="projects__heading heading">
+                    <div class="projects__line line"></div>
+                    <h2 class="projects__title h2__title">
+                        WHAT WE DO
+                    </h2>
+                </div>
+                <!-- ROW 1 -->
+                <div class="projects__row row">
+                    <!-- COL 1 -->
+                    <div class="projects__col col">
+                        <img src="@@webRoot/img/pic-1.jpg" alt="" class="projects__img">
+                        <div class="projects__square blue"></div>
+                    </div>
+                    <!-- COL 2 -->
+                    <div class="projects__col col">
+                        <p class="projects__u-title u-title">
+                            ONE WORLD
+                        </p>
+                        <h2 class="projects__sub-title h2__title h2">
+                            TRADE CENTER
+                        </h2>
+                        <p class="projects__text text">
+                            Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
+                        </p>
+                        <button class="projects__button button">MORE DETAILS</button>
+                        <p class="projects__address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Hong Kong - 1588 feet
+                        </p>
+                    </div>
+                </div>
+                <!-- ROW 2 -->
+                <div class="projects__row row">
+                    <!-- COL 1 -->
+                    <div class="projects__col col">
+                        <p class="projects__u-title u-title">
+                            INTERNATIONAL
+                        </p>
+                        <h2 class="projects__sub-title h2__title h2">
+                            COMMERCE CENTRE
+                        </h2>
+                        <p class="projects__text text">
+                            Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+                        </p>
+                        <button class="projects__button button">MORE DETAILS</button>
+                        <p class="projects__address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Hong Kong - 1588 feet
+                        </p>
+                    </div>
+                    <!-- COL 2 -->
+                    <div class="projects__col col">
+                        <img src="@@webRoot/img/pic-2.jpg" alt="" class="projects__img">
+                        <div class="projects__square purple"></div>
+                    </div>
+                </div>
+                <div class="row projects__row"></div>
+            </div>
+        </section>
+        <!-- NEWS SECTION -->
+        <section class="news">
+            <div class="container news__container">
+                <!-- HEADING -->
+                <div class="news__heading heading">
+                    <div class="news__line line"></div>
+                    <h2 class="news__title h2__title">
+                        LATEST NEWS
+                    </h2>
+                </div>
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper news__swiper">
+                        <div class="swiper-slide news__slide">
+                            <img src="@@webRoot/img/news-1.jpg" alt="" class="news__img">
+                            <div class="news__slide-heading">
+                                <h3 class="news__slide-t">
+                                    SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                                </h3>
+                                <p class="news__slide-p">
+                                    Free directories: directories are perfect for customers that
+                                    are searching for...
+                                </p>
+                                <div class="news__user">
+                                    <img src="@@webRoot/img/user-1.png" alt="" class="news__user-img">
+                                    <div class="news__user-data">
+                                        <p class="news__user-name">ALJA BRUN</p>
+                                        <p class="news__user-birth">20 Jan 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide news__slide">
+                            <img src="@@webRoot/img/news-2.jpg" alt="" class="news__img">
+                            <div class="news__slide-heading">
+                                <h3 class="news__slide-t">
+                                    EFFECTIVE ADVERTISING POINTERS.
+                                </h3>
+                                <p class="news__slide-p">
+                                    Having a home based business is a wonderful asset to your life...
+                                </p>
+                                <div class="news__user">
+                                    <img src="@@webRoot/img/user-2.png" alt="" class="news__user-img">
+                                    <div class="news__user-data">
+                                        <p class="news__user-name">DOMINIC FREEMAN</p>
+                                        <p class="news__user-birth">13 Dec 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide news__slide">
+                            <img src="@@webRoot/img/news-3.jpg" alt="" class="news__img">
+                            <div class="news__slide-heading">
+                                <h3 class="news__slide-t">
+                                    HYPNOTIZE YOURSELF INTO THE GHOST.
+                                </h3>
+                                <p class="news__slide-p">
+                                    There are many things that are important to catalog design...
+                                </p>
+                                <div class="news__user">
+                                    <img src="@@webRoot/img/user-3.png" alt="" class="news__user-img">
+                                    <div class="news__user-data">
+                                        <p class="news__user-name">ALICE WARD</p>
+                                        <p class="news__user-birth">30 Nov 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide news__slide">
+                            <img src="@@webRoot/img/news-1.jpg" alt="" class="news__img">
+                            <div class="news__slide-heading">
+                                <h3 class="news__slide-t">
+                                    SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                                </h3>
+                                <p class="news__slide-p">
+                                    Free directories: directories are perfect for customers that
+                                    are searching for...
+                                </p>
+                                <div class="news__user">
+                                    <img src="@@webRoot/img/user-1.png" alt="" class="news__user-img">
+                                    <div class="news__user-data">
+                                        <p class="news__user-name">ALJA BRUN</p>
+                                        <p class="news__user-birth">20 Jan 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide news__slide">
+                            <img src="@@webRoot/img/news-2.jpg" alt="" class="news__img">
+                            <div class="news__slide-heading">
+                                <h3 class="news__slide-t">
+                                    EFFECTIVE ADVERTISING POINTERS.
+                                </h3>
+                                <p class="news__slide-p">
+                                    Having a home based business is a wonderful asset to your life...
+                                </p>
+                                <div class="news__user">
+                                    <img src="@@webRoot/img/user-2.png" alt="" class="news__user-img">
+                                    <div class="news__user-data">
+                                        <p class="news__user-name">DOMINIC FREEMAN</p>
+                                        <p class="news__user-birth">13 Dec 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination1"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+        <section class="gallery">
+            <div class="container gallery__container">
+                <!-- HEADING -->
+                <div class="gallery__heading heading">
+                    <div class="gallery__line line"></div>
+                    <h2 class="gallery__title h2__title">
+                        GALLERY
+                    </h2>
+                </div>
+                <!-- GALLERY CARDS -->
+                <div class="gallery__cards">
+                    <div class="gallery__card">
+                        <img src="@@webRoot/img/zoom.svg" alt="" class="gallery__icon">
+                        <img src="@@webRoot/img/gallery-1.jpg" alt="" class="gallery__img">
+                    </div>
+                    <div class="gallery__card">
+                        <img src="@@webRoot/img/gallery-2.jpg" alt="" class="gallery__img">
+                    </div>
+                    <div class="gallery__card">
+                        <img src="@@webRoot/img/gallery-3.jpg" alt="" class="gallery__img">
+                    </div>
+                    <div class="gallery__card">
+                        <img src="@@webRoot/img/gallery-4.jpg" alt="" class="gallery__img">
+                    </div>
+                    <div class="gallery__card">
+                        <img src="@@webRoot/img/gallery-5.jpg" alt="" class="gallery__img">
+                    </div>
+                </div>
+                <button class="button gallery__button">
+                    SEE MORE
+                </button>
+            </div>
+        </section>
+        <section class="contact">
+            <form action="" class="form contact__form"></form>
+            <div class="map contact__map">
+                <div id='map' style="width: 100vw; height: 70vh";></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!--Обовязково додавати потрібно для JS -->
+    <script> var exports = {}; </script>
+    <script src="@@webRoot/js/index.js"></script>
+</body>
+
+</html>
