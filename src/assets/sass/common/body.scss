@@ -218,6 +218,7 @@
   &__contacts{
     display: flex;
     flex-direction: column;
+    gap: 40px;
   }
 
   &__inp{
@@ -226,5 +227,19 @@
     border-style: solid;
     border: none;
     border-bottom: 1px solid darkgrey;
+    margin: 0 0 30px 0;
+  }
+
+  &__button{
+    margin-left: auto;
+  }
+
+  &__icon{
+    color: $color-purple;
+  }
+
+  &__p{
+    display: flex;
+    gap: 8px;
   }
 }
