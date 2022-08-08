@@ -122,11 +122,13 @@ document.querySelectorAll('.gallery__img').forEach(function (photo){
             <img class="gallery__modal-img" src="${imgSrc}">
         `
         galleryModalContainer.style.display = 'block';
+        document.querySelector('.modal').style.display = 'block'
         document.querySelector('.gallery__icon').style.display = 'none'
         document.querySelector('body').style.overflow = 'hidden'
 
         document.querySelector('.modal__close').addEventListener('click', () => {
             galleryModalContainer.style.display = 'none';
+            document.querySelector('.modal').style.display = 'none'
             document.querySelector('.gallery__icon').style.display = 'block'
             document.querySelector('body').style.overflow = 'scroll'
         })

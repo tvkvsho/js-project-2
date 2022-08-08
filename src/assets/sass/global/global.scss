@@ -110,6 +110,7 @@ body {
     transition: .4s ease-out;
     z-index: 999;
     padding: 40px;
+    display: none;
 
     &__container{
         position: fixed;
