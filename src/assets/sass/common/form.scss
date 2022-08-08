@@ -13,6 +13,14 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+
+  &__success{
+    color: green;
+    text-align: center;
+    margin-top: 20%;
+    border: 1px solid;
+    padding: 16px;
+  }
 }
 
 .fieldset{

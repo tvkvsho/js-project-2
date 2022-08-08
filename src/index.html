@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Monticello</title>
+    <link rel="icon" type="image/x-icon" href="@@webRoot/img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <!--Шлях до css це відносний шлях не залежить ввід папки-->
     <link rel="stylesheet" href="@@webRoot/css/bundle.min.css">
@@ -19,34 +20,40 @@
 
 <body>
     <div class="page-wrapper">
+
+        <!-- HEADER -->
         <header class="header">
             <div class="container header__container">
                 <nav class="nav header__nav">
                     <img src="@@webRoot/img/logo.svg" alt="" class="nav__logo">
                     <ul class="menu header__menu">
                         <li class="menu__item">
-                            ABOUT US
+                            <span class="menu__dot"></span>
+                            <a href="#projects" class="menu__link">PROJECTS</a>
                         </li>
                         <li class="menu__item">
-                            PROJECTS
+                            <span class="menu__dot"></span>
+                            <a href="#news" class="menu__link">NEWS</a>
                         </li>
                         <li class="menu__item">
-                            NEWS
+                            <span class="menu__dot"></span>
+                            <a href="#gallery" class="menu__link">GALLERY</a>
                         </li>
                         <li class="menu__item">
-                            CONTACT
+                            <span class="menu__dot"></span>
+                            <a href="#contact" class="menu__link">CONTACT</a>
                         </li>
                     </ul>
                     <div class="social header__social">
-                        <div class="social__item">
+                        <a class="social__item">
                             <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                        <div class="social__item">
+                        </a>
+                        <a class="social__item">
                             <i class="fa-brands fa-twitter"></i>
-                        </div>
-                        <div class="social__item">
+                        </a>
+                        <a class="social__item">
                             <i class="fa-brands fa-instagram"></i>
-                        </div>
+                        </a>
                     </div>
                 </nav>
             </div>
@@ -82,13 +89,14 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="header__arrow">
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
+                <a href="#projects" class="header__arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
             </div>
         </header>
+
         <!-- WHAT WE DO SECTION -->
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="container projects__container">
                 <!-- HEADING -->
                 <div class="projects__heading heading">
@@ -150,8 +158,9 @@
                 <div class="row projects__row"></div>
             </div>
         </section>
+
         <!-- NEWS SECTION -->
-        <section class="news">
+        <section class="news"  id="news">
             <div class="container news__container">
                 <!-- HEADING -->
                 <div class="news__heading heading">
@@ -261,7 +270,7 @@
         </section>
 
         <!-- GALLERY SECTION -->
-        <section class="gallery">
+        <section class="gallery"  id="gallery">
             <div class="container gallery__container">
                 <!-- HEADING -->
                 <div class="gallery__heading heading">
@@ -289,12 +298,17 @@
                         <img src="@@webRoot/img/gallery-5.jpg" alt="" class="gallery__img">
                     </div>
                 </div>
+                <div class="modal__container">
+                    <div class="modal"></div>
+                </div>
                 <button class="button gallery__button">
                     SEE MORE
                 </button>
             </div>
         </section>
-        <section class="contact">
+
+        <!-- CONTACT SECTION -->
+        <section class="contact"  id="contact">
             <div class="map contact__map">
                 <div id='map' style="width: 100vw; height: 70vh";></div>
             </div>
@@ -325,12 +339,14 @@
                 </div>
                 <fieldset class="fieldset contact__fieldset">
                     <input type="text" class="contact__inp" placeholder="Name">
-                    <input type="email" class="contact__inp" placeholder="Email">
+                    <input type="email" class="contact__inp js-email" placeholder="Email">
                     <button class="button contact__button">Submit</button>
                 </fieldset>
             </form>
         </section>
-        <footer class="footer">
+
+        <!-- FOOTER -->
+        <footer class="footer"  id="footer">
             <div class="footer__container container">
                 <img src="@@webRoot/img/logo.svg" alt="" class="logo footer__logo">
                 <div class="social footer__social">
@@ -349,6 +365,9 @@
                 </p>
             </div>
         </footer>
+        <div class="modal">
+
+        </div>
     </div>
 
     <!-- Swiper JS -->
